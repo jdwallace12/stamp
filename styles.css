@@ -122,7 +122,10 @@ button:hover {
 button:active {
   background-color: #1d68a1;
 }
-
+.eye {
+  position: absolute;
+  right: 50px;
+}
 .hero {
   background-image: url("design/optimized-background.png");
   background-size: cover;
