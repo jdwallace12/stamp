@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Stamp</title>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-inner">
+      <header>
+        <div class="container">
+          <nav class="primary-nav">
+            <div class="logo"><a href="#">Stamp</a>
+            </div>
+            <ul id="mainNav">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contacts</a></li>
+              <ul class="modal-menu">
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">TERMS OF USE</a></li>
+                <li><a href="#">PRIVACY POLICY</a>
+                </li>
+              </ul>
+            </ul>
+            <a role="button" class="burger" aria-label="menu" aria-expanded="false" data-target="mainNav">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </nav>
+
+        </div>
+      </header>
+      <main class="container">
+        <div class="content">
+          <div class="column">
+            <h1 class="is-inverted has-text-shadow">Simple Way to Organize Your Inspirations</h1>
+            <h2 class="subtitle">I think what motivates people is not great hate, but great love for other people.</h2>
+          </div>
+          <div class="column">
+            <h3 class="is-inverted has-text-shadow is-centered subtitle">SIGN UP FOR FREE</h3>
+            <form action="">
+              <input type="text" name="name" placeholder="Name"></input>
+              <input type="email" name="email" placeholder="Email"></input>
+              <input type="password" name="password" placeholder="Password"></input>
+              <button>Sign Up</button>
+            </form>
+            <p class="is-gray is-centered">By clicking "Sign up" I agree to our</p>
+            <p class="is-inverted is-centered mt-1"><a href="#">Terms of Service</a></p>
+          </div>
+        </div>
+      </main>
+      <footer class="container">
+        <p class="copyright subtitle">© 2021 Stamp. All Rights Reserved</p>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">TERMS OF USE</a></li>
+            <li><a href="#">PRIVACY POLICY</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "burger" elements
+      const $navbarBurgers = document.querySelectorAll(".burger");
+
+      // Check if there are any burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
