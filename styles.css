@@ -91,6 +91,14 @@ button {
   font-weight: 800;
   font-size: 1.1rem;
   border-radius: 0 0 0.3rem 0.3rem;
+  cursor: pointer;
+  transition: background-color .25s ease;
+}
+button:hover {
+  background-color: #25a1ff;
+}
+button:active {
+  background-color: #1d68a1;
 }
 
 .hero {
@@ -137,7 +145,7 @@ header {
   display: block;
   position: absolute;
   width: 100vw;
-  background-color: #2d9aed;
+  background-color: rgba(45, 154, 237, 1);
   height: 100vh;
   top: 0;
   left: 0;
@@ -149,10 +157,12 @@ header {
 .primary-nav>ul.is-active .modal-menu {
   border-top: 1px solid;
   padding-top: 1.3rem;
-  margin-top: 1.3rem;
+  margin: 0 auto;
   display: block;
   list-style-type: none;
   font-size: 1.13rem;
+  width: 300px;
+  margin-top: 2rem;
 }
 
 .primary-nav>ul {
