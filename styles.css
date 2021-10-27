@@ -24,11 +24,8 @@ a {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  transition: color .25s ease;
 }
-a:hover {
-  color: #2d9aed;
-}
+
 a:after {
   content: '';
   position: absolute;
@@ -170,13 +167,14 @@ header {
   display: block;
   position: absolute;
   width: 100vw;
-  background-color: rgba(45, 154, 237, 1);
+  background-color: #2177b9;
   height: 100vh;
   top: 0;
   left: 0;
   padding: 2rem;
   font-size: 2rem;
   line-height: 2.4;
+  z-index: 2;
 }
 
 .primary-nav>ul.is-active .modal-menu {
@@ -213,6 +211,7 @@ header {
   display: block;
   height: 3.25rem;
   position: relative;
+  z-index: 3;
   width: 3.25rem;
   margin-left: auto;
 }
