@@ -22,6 +22,29 @@ h2 {
 a {
   color: #fff;
   text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: color .25s ease;
+}
+a:hover {
+  color: #2d9aed;
+}
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2d9aed;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .subtitle {
@@ -94,9 +117,11 @@ button {
   cursor: pointer;
   transition: background-color .25s ease;
 }
+
 button:hover {
   background-color: #25a1ff;
 }
+
 button:active {
   background-color: #1d68a1;
 }
