@@ -25,7 +25,6 @@ a {
   display: inline-block;
   position: relative;
 }
-
 a:after {
   content: '';
   position: absolute;
