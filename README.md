@@ -57,4 +57,6 @@ Below are things you should not worry about when completing this challenge.
 
 - Anything that needs improvement?
 
+1. Update copyright date
+
 **Have fun building!** 🚀

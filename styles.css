@@ -1,3 +1,4 @@
+/* base styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,7 +40,8 @@ a:after {
   transition: transform 0.25s ease-out;
 }
 
-a:hover:after {
+a:hover:after,
+a:active:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -49,6 +51,7 @@ a:hover:after {
   font-weight: 400;
 }
 
+/* helpers */
 .is-gray {
   color: #515152;
 }
@@ -69,6 +72,11 @@ a:hover:after {
   margin-top: 0.5rem;
 }
 
+.container {
+  padding: 0 3rem;
+}
+
+/* form styles */
 form {
   padding: 1.6rem 0;
 }
@@ -122,12 +130,22 @@ button:hover {
 button:active {
   background-color: #1d68a1;
 }
-.eye {
-  position: absolute;
-  right: 50px;
+
+input[type='password'] {
+  background-image: url("design/eye-icon.svg");
+  background-size: 70px 20px;
+  background-position: right center;
+  background-repeat: no-repeat;
 }
+
+.arrow {
+  position: relative;
+  top: 6px;
+}
+
+/* hero styles */
 .hero {
-  background-image: url("design/optimized-background.png");
+  background-image: url("design/optimized-background.jpg");
   background-size: cover;
   min-height: 100vh;
   position: relative;
@@ -150,10 +168,7 @@ button:active {
   z-index: 2;
 }
 
-.container {
-  padding: 0 3rem;
-}
-
+/* header and nav */
 header {
   padding: 1.6rem 0;
 }
@@ -268,6 +283,7 @@ header {
   display: none;
 }
 
+/* page content */
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -277,6 +293,7 @@ header {
   padding: 15vh 3rem 18vh 3rem;
 }
 
+/* footer */
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -295,6 +312,7 @@ footer {
   padding: 0 1rem;
 }
 
+/* media queries */
 @media (max-width: 1050px) {
   h1 {
     font-size: 5.3vw;
